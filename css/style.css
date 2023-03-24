@@ -101,6 +101,11 @@ section h2 {
   background-color: var(--banana-yellow-dark);
 }
 
+.card img {
+  /* width: 500px;
+  height: 325px; */
+}
+
 .skills-section {
   margin: 0;
   background-color: var(--banana-yellow-dark);
@@ -109,5 +114,4 @@ section h2 {
 .contact-section {
   margin: 0;
   background-color: var(--black);
-  
 }
