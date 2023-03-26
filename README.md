@@ -22,6 +22,9 @@ The site has the following functionalities:
 ## Live URL
 https://laszlosomogyimusic.github.io/Bootstrap-Portfolio/
 
+## Reused Code
+I have copied the Portfolio and the About Me section from an internal project to better understand the page alignment and custom modifier classes.
+
 ## Mock-up
 ### Wide Screen (laptop or PC)
 ![portfolio wide](./images/module3-mockup-large.png)
