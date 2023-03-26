@@ -24,6 +24,7 @@ https://laszlosomogyimusic.github.io/Bootstrap-Portfolio/
 
 ## Reused Code
 I have copied the Portfolio and the About Me section from an internal project to better understand the page alignment and custom modifier classes.
+The hyperlink hover effects taken from https://css-tricks.com/css-link-hover-effects/ 
 
 ## Mock-up
 ### Wide Screen (laptop or PC)
