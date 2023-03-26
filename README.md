@@ -20,7 +20,7 @@ The site has the following functionalities:
 * A modal window (bonus content) 
 
 ## Live URL
-TODO
+https://laszlosomogyimusic.github.io/Bootstrap-Portfolio/
 
 ## Mock-up
 ### Wide Screen (laptop or PC)
