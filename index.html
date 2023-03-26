@@ -12,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Custom icons for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
+  
 
   <title>Laszlo Somogyi // Musician // Web developer</title>
 </head>
@@ -26,7 +27,7 @@
 <body id="page-top">
   <!-- Navigation bar -->
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-light nav-customized">
-    <a class="navbar-brand" href="#">Laszlo Somogyi</a>
+    <a class="navbar-brand navlink-anchor" href="#">Laszlo Somogyi</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,16 +35,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#aboutMe">About me</a>
+          <a class="nav-link navlink-anchor" href="#aboutMe">About me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-link navlink-anchor" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link navlink-anchor" href="#skills">Skills</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link navlink-anchor" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -66,14 +67,33 @@
 
   <!-- Skills section -->
   <section class="skills-section" id="skills">
-    <h2 class="section-heading">These skills I have or will have soon:</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Bootstrap</li>
-      <li>Javascript</li>
-      <li>Web APIs</li>
-    </ul>
+
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-lg-12 text-black">
+          <div class="p-5">
+            <!-- 
+              my-4 Desription:
+              The classes are named using the format {property}{sides}-{size}
+              Where property is one of:
+                m - for classes that set margin
+              Where sides is one of:
+                y - for classes that set both *-top and *-bottom
+            -->
+            <h1 class="my-4">Skills</h1>
+            <p>These skills I have or will have soon:</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Javascript</li>
+              <li>Web APIs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>    
   </section>
 
   <!-- Portfolio section -->
@@ -85,12 +105,22 @@
 
       <!-- My Work -->
       <div class="row justify-content-between text-center mt-8">
+            <!-- 
+              mx-auto and mb-4 Desription:
+              The classes are named using the format {property}{sides}-{size}
+              Where property is one of:
+                m - for classes that set margin
+              Where sides is one of:
+                b - for classes that set margin-bottom or padding-bottom
+                x - for classes that set both *-left and *-right
+            -->        
         <div class="col-lg-5 mx-auto mb-4">
           <div class="card">
             <img class="card-img-top" src="images/portfolio-1.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">Release The Kitten</h4>
-              <p class="card-text">This House Is Ours</p>
+              <h5 class="card-title">This House Is Ours</h5>
+              <p class="card-text">My first single after a long pause</p>
             </div>
             <div class="card-footer">
               <a href="https://www.youtube.com/watch?v=hdJIyVb4DvI" target="_blank" class="btn btn-primary">Find Out More!</a>
@@ -113,24 +143,31 @@
       </div>
   </section>
 
-
-
   <!-- About me section -->
   <section class="aboutme-section" id="aboutMe">
 
     <div class="container">
       <div class="row align-items-center">
+        <!-- the order-lg-2 puts the mugshot to the second column. Slightly confusing, but good trick. -->
         <div class="col-lg-5 order-lg-2">
+          <!-- p-5 sets the padding -->
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="images/mughshot.jpg" alt="Laszlo Somogyi">
+            <img class="img-fluid rounded-circle" src="images/laszlo-somogyi.jpg" alt="Laszlo Somogyi">
           </div>
         </div>
-        <div class="col-lg-7 order-lg-1 text-white">
+        
+        <!-- 
+          The order-lg-1 puts the text to the first column. Slightly confusing, but good trick. 
+          Also the text-black looks a quicker fix rather changing the CSS
+        -->
+        <div class="col-lg-7 order-lg-1 text-black">
           <div class="p-5">
+            <!-- display-4 is bootstrap class is for heading to stand out -->
             <h2 class="display-4">About me</h2>
             <p>Hi there, I'm Laszlo. I'm a musician and also learning Web development and UX at Birmingham University.</p>
-            <a href="#" class="btn btn-lg btn-outline-light">
-               <i class="fas fa-download"></i>
+            <a href="#" class="btn btn-lg btn-outline-dark"  data-toggle="modal" data-target="#modalCv">
+                <!-- fas and fa-download is a Font Awesome class -->
+               <i class="fa fa-download"></i>
                Download my Resume!</a>
           </div>
         </div>
@@ -138,10 +175,8 @@
     </div>    
   </section>
 
-
-
-  <!-- Contact section -->
-  <section class="contact-section" id="contact">
+  <!-- Contact/footer section -->
+  <footer class="footer-section" id="contact">
     <div class="container">
       <div class="row">
         <!-- Card 1 -->
@@ -149,7 +184,9 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Instagram</h5>
-              <a href="http://instagram.com/releasethekitten">@releasethekitten</a>
+              <!-- fab is a Font Awesome Brands class and fa-instagram is a Font Awesome Instagram class -->
+              <i class="fab fa-instagram"></i>
+              <a class="footer-anchor" href="http://instagram.com/releasethekitten" target="_blank">@releasethekitten</a>
             </div>
           </div>
         </div>
@@ -158,8 +195,9 @@
         <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Email</h5>
-              <a href="mailto:supersecret@super.secret">supersecret@super.secret</a>
+              <h5 class="card-title">LinkedIn</h5>
+              <i class="fab fa-linkedin"></i>
+              <a class="footer-anchor" href="https://www.linkedin.com/in/laszlo-somogyi/" target="_blank">LinkedIn link to LinkedIn</a>
             </div>
           </div>
         </div>
@@ -169,16 +207,42 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">GitHub</h5>
-              <a href="https://github.com/laszlosomogyimusic">https://github.com/laszlosomogyimusic</a>
+              <!-- fab is a Font Awesome Brands class and fa-github is a Font Awesome GitHub class -->
+              <i class="fab fa-github"></i>
+              <a class="footer-anchor footer-anchor" href="https://github.com/laszlosomogyimusic" target="_blank">https://github.com/laszlosomogyimusic</a>
             </div>
           </div>
         </div>
-        <!--end card 3 -->
-
+        <!--end card 3 -->   
       </div>
+      <p class="text-muted small mb-4 mb-lg-2 text-white">Laszlo Somogyi Music 2023. Coded by me.</p>
+    </footer>
 
 
-  </section>
+  <!-- Modal windows BEGIN -->
+
+  <!-- CV Modal Window BEGIN -->
+  <div class="modal fade" id="modalCv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">You can download my resume very soon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Please be patient
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CV Modal Window END -->
+
+  <!-- Modal windows END -->  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
