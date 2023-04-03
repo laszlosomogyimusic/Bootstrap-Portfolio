@@ -70,9 +70,18 @@ section h2 {
   position: fixed;
   width: 100%;
   background-color: transparent !important;
+  /* background-color: white !important; */
   background-size: cover;
   z-index: 10;
 }
+
+/* this class is activated when the screeen is narrow and the hamburger menu is on the screen */
+/* .show {
+  background-color: white;
+  z-index: -1;
+} */
+
+
 
 /* this puts the nav menu elements to the right hand side */
 .navbar-nav {
@@ -171,3 +180,37 @@ We will use box-shadow instead of the background property since it allows us to 
   box-shadow: inset 300px 0 0 0 var(--banana-yellow-dark);
 }
 /* footer END */
+
+/* breakpoint for medium */
+@media (max-width: 767px) {
+  .jumbotron {
+    padding-top: 50px;
+    height: 50vh;
+  }
+
+  .navlink-anchor::before {
+    width: 25%;
+  }
+
+  /* I have to use this separated class to have the 100% underline for the header text */
+  .navlink-header-anchor::before {
+    width: 100%;
+  }
+}
+
+/* breakpoint for large */
+@media (max-width: 992px) {
+  .jumbotron {
+    padding-top: 50px;
+    height: 50vh;
+  }
+
+  .navlink-anchor::before {
+    width: 25%;
+  }
+
+  /* I have to use this separated class to have the 100% underline for the header text */
+  .navlink-header-anchor::before {
+    width: 100%;
+  }
+}
